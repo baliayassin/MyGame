@@ -1,0 +1,37 @@
+var articleObjects=[13];
+var mainPTR = document.getElementById('boxes');
+
+var plus='<img src="images/white_plus.png">';
+
+//main function
+(function () {
+    //var length = 13;
+
+    //first loop running creating the starting rectangle pack
+    for(var i = 0; i < 12; ++i){
+        var article=document.createElement("article");
+        article.className="square";
+        article.style.background='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+       var whiteStar = createStar();
+       article.appendChild(whiteStar);
+       mainPTR[0].appendChild(article);
+    }
+
+    
+})();
+
+function createStar(){
+	var star=document.createElement("img"); 
+	    star.className="star";
+	     star.addEventListener("click", toggle);
+  return star;
+	
+}
+
+
+function toggle(){
+  if (this.style.opacity == "0")
+      this.style.opacity = "1";
+  else
+      this.style.opacity = "0";
+}

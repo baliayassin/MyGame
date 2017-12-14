@@ -1,0 +1,18 @@
+(function sec(){
+	
+	var mainPTR = document.getElementById('boxes');
+	//secObj.style.backgroundColor = "black";
+	//
+	
+
+			for(i=0;i<13;i++){
+			var secObj=document.createElement("section");
+			secObj.className="square";
+			var color='#' + Math.random().toString(16).substring(4);
+                   secObj.style.backgroundColor=color;
+		           mainPTR.appendChild(secObj);       
+         	
+	} 
+	
+	
+})();

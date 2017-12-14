@@ -1,0 +1,29 @@
+
+
+(function sec(){
+	
+	var mainPTR = document.getElementById('boxes');
+	//secObj.style.backgroundColor = "black";
+	//
+	
+
+			for(i=0;i<13;i++){
+			     var  secObj=document.createElement('article');
+			     secObj.className="square";
+			     secObj.style.background='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+                 secObj.style.width = "333px";
+                 secObj.style.height = "348px";
+                 secObj.style.float = "left";
+                // secObj.addEventListener('click',addStar);
+                 document.getElementById('boxes').appendChild(secObj);       
+         	
+	} 
+	
+	
+})();
+
+function addStar(){
+	var elem = document.createElement("img");
+	elem.setAttribute("src", "images/white_star.png");
+	document.getElementById("boxes").appendChild(elem);
+}

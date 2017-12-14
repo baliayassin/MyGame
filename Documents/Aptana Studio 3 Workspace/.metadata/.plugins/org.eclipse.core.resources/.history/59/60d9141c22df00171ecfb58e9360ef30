@@ -1,0 +1,29 @@
+(function sec(){
+	var secObj=document.createElement('div');
+	secObj.className="square";
+	secObj.style.width="100px";
+	secObj.style.height="100px";
+	
+	var color='#' + Math.random().toString(16).substring(4);
+
+	secObj.style.backgroundColor=color;
+	
+	var appendDiv=function(){
+		
+		for(i=0;i<13;i++){
+		 var newDiv = document.createElement('div');
+         
+         newDiv.className = secObj.className;
+         document.getElementsByTagName('main').appendChild(secObj);
+         
+	}
+		
+		//secObj.addEventListener('click',star);
+		
+		
+		
+		
+	} 
+	
+	
+})();

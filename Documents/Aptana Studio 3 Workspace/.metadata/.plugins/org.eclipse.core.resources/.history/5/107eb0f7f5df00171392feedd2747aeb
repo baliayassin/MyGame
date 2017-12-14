@@ -1,0 +1,54 @@
+
+var articleObjects=[13];
+
+var star='<img src="images/white_star.png">';
+var plus='<img src="images/white_plus.png">';
+(function articles(){
+	
+	var mainPTR = document.getElementById('boxes');
+	
+			for( i=0;i<13;i++){
+			    
+			     articleObjects[i]=document.createElement('article');
+			     
+			     articleObjects[i].className="square";
+			     articleObjects[i].style.background='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+              
+                articleObjects[i].onclick=function(){ 
+                	
+                	if(this.innerHTML==star )
+                	this.innerHTML="";
+                	else 
+                	    this.innerHTML=star;
+                	};
+                	
+                 document.getElementById('boxes').appendChild(articleObjects[i]); 
+                     
+                // articleObjects[i].addEventListener("click",addOrDeleteStar);
+         	     
+	} //end for 
+	articleObjects[12].innerHTML=plus;
+	articleObjects[12].setAttribute("id","plus")
+	document.getElementById('plus').onclick=function(){
+		addArticle(this); 
+		};
+	
+	
+})();
+
+
+function addArticle(){
+	
+	var newArticle=document.createElement('article');
+	newArticle.className="square";
+    newArticle.style.background='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+    		     
+	document.getElementById('boxes').appendChild(newArticle); 
+	
+	
+
+}
+
+
+
+

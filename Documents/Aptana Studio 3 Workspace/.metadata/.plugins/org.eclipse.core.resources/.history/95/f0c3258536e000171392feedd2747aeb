@@ -1,0 +1,26 @@
+$("document").ready(function () {
+    addBoxsToMain();
+    
+    $("main").on("click", ".box:not(.plus)", showStar); //works on dynamic elements!
+    $(".box.plus").click(addRec);            
+})
+
+
+function createSection() {
+    var newSect = $("<section/>");
+    newSect.addClass("box");    
+    newSect.css("background-color", getRandomColor());
+    return newSect;
+}
+
+
+
+function addBoxsToMain() {
+    var i;
+    for (i = 0; i < 36; i++) {
+        $("main").append(createSection());        
+    }    
+    
+  
+    $("main section:last").addClass("plus"); 
+}

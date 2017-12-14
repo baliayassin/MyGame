@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Tar8/index.thml&apos;" deleteContents="false" description="Delete resource &apos;Tar8/index.thml&apos;" element1="/Tar8/index.thml" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1512389320488"/>
+</session>

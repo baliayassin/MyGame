@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="includes/style.css" >
+	</head>
+	<header></header>
+	
+	<body>
+		
+		<form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get">
+			<label>1.FullName &nbsp;<input type="text"  name="fullName" required /></label>
+			<label>2.password &nbsp;<input type="password" name="pas" /></label>
+			<label>3.mail <input type="email" name="mail" autocomplete/></label>
+			<label>4.website <input type="url" name="web"/></label>
+			<label>5.phone <input type="tel" name="phone"/></label>
+			<label>6.Coffe <input type="number" name="coffe"/></label> 
+			<label>6.Range <input type="range" min="50" max="100" name="temper"/></label>
+			<label>7.Address <textarea rows="2" cols="8" name="address" > balia yassin</textarea>  </label>  
+			<legend> 10.hoppies </legend>
+			<label>GYM:<input type="checkbox" name="interests[]" value="" /> </label>
+			
+			<label>11.Gender <input type="radio" name="gender" value="male" checked />Male <br />
+				<input type="radio" name="gender" value="female"  />Female <br />
+				<input type="radio" name="gender" value="other"  />Others 
+			</label>
+			<input type="submit"  value="submit" />
+        </form >
+		
+	</body>
+	
+	
+	
+	
+</html>

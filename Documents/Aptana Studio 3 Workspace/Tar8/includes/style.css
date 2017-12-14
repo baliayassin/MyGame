@@ -1,0 +1,84 @@
+body{
+	font-family: Arial;
+	font-size: 100%;
+}
+
+section{
+	
+	display: block;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+@media(min-width:851px){
+
+.leftCol{
+	float:left;
+	width:40%;
+	margin-right: 5%;
+	background: yellow;
+	font-size: 1.4vw;
+	
+}
+
+.medCol{
+	
+	float: left;
+	width:25%;
+	margin-right: 25%;
+	background: #6666666;
+	font-size: 1.2vw;
+}
+
+.rightCol{
+	
+	float:right;
+	width:25%;
+	background: red;
+	font-size: 1.2vw;
+}
+
+}
+
+@media(max-width:850){
+	
+.leftCol{
+	float:left;
+	width:55%;
+	margin-right: 5%;
+	background: yellow;
+	font-size: 1.4vw;
+	
+}
+
+.medCol{
+	
+	float: left;
+	width:35%;
+	margin-right: 25%;
+	background: #6666666;
+	font-size: 1.2vw;
+}
+
+.rightCol{
+	
+	float:right;
+	width:25%;
+	background: red;
+	font-size: 1.2vw;
+}
+	
+}
+
+
+@media(min-width:591px)and (max-width:850px){
+	
+}
+
+@media(max-width:591px){
+	.leftCol,.medCol,.rightCol
+	
+}

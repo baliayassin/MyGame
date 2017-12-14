@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	
+	<html>
+	<head>
+		
+		<title> HomeWork2</title>
+		<link rel="stylesheet" href="includes/style.css" />
+		<meta charset="utf-8" />
+	</head>
+	
+	
+	<body id="wrapper">
+			
+		<header>
+	       <a href="index.html"> <img src="images/star.png" /></a> 
+		</header>
+		
+		<nav >
+			<ul>
+				<li  id="layout1"><a href="index.html"> layout 1</a></li>
+				<li><a href="layOut2.html"> layout 2</a></li>
+			    <li><a href="#"> layout 3</a></li>
+		   </ul>	
+				
+		</nav>	
+		<div id="container">
+			<main> 
+				
+				<section class="section1"></section>
+					
+					<section class="section2"></section>
+					<section class="section3"></section>
+					
+				
+            
+		</main>
+		
+		<aside>
+			 
+			 <section ></section>
+			
+		</aside>
+		</div>
+		
+		<footer>  
+			
+		
+			</footer>
+			
+		
+	</body>
+	
+
+</html>

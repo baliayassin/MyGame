@@ -1,0 +1,29 @@
+(function sec(){
+	
+	var mainPTR = document.getElementById('boxes');
+	//secObj.style.backgroundColor = "black";
+	//
+	
+
+			for(i=0;i<13;i++){
+			var secObj=document.createElement('article');
+			secObj.className="square";
+			//var color='#' + Math.random().toString(16).substring(4);
+              //   secObj.style.background=color;
+              secObj.style.background='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+               
+					//secObj.style.setBackgroundColor(Color.rgb(random.nextInt(255), random.nextInt(255), random.nextInt(255)));
+                 
+                  
+                 // secObj.style.width = "333px";
+                  //secObj.style.height = "348px";
+                  //secObj.style.float = "left";
+                  
+                  
+ 
+		           document.getElementById('boxes').appendChild(secObj);       
+         	
+	} 
+	
+	
+})();

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="includes/style.css" >
+	</head>
+	<header></header>
+	
+	<body>
+		
+		<form action="http://html5-book.co.il/teach/forms/get_form2.php" method="">
+			<label>1.FullName &nbsp;<input type="text" pattern="[A-Z]" name="fullName" required /></label>
+			<label>2.password &nbsp;<input type="password" name="pas" /></label>
+			<input type="submit" name="submit" value="" id="submit"/>
+        </form >
+		
+	</body>
+	
+	
+	
+	
+</html>

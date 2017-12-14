@@ -1,0 +1,46 @@
+body{
+	font-family: Arial;
+	font-size: 100%;
+}
+
+section{
+	
+	display: block;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+@media(min-width:851px){
+
+.leftCol{
+	float:left;
+	width:40%;
+	margin-right: 5%;
+	background: yellow;
+	font-size: 1.4vw;
+	
+}
+
+.medCol{
+	
+	float: left;
+	width:25%;
+	margin-right: 25%;
+	background: #6666666;
+	font-size: 1.2vw;
+}
+
+.rightCol{
+	
+	float:right;
+	width:25%;
+	background: red;
+	font-size: 1.2vw;
+}
+
+
+	
+}

@@ -1,0 +1,37 @@
+
+var articleObjects=[13];
+(function articles(){
+	
+	var mainPTR = document.getElementById('boxes');
+	
+			for(i=0;i<13;i++){
+			    // var  artObj=document.createElement('article');
+			     articleObjects[i]=document.createElement('article');
+			     articleObjects[i].className="square";
+			     articleObjects[i].style.background='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+                 articleObjects[i].style.width = "333px";
+                 articleObjects[i].style.height = "348px";
+                 articleObjects[i].style.float = "left";
+                
+                 document.getElementById('boxes').appendChild(articleObjects[i]); 
+                 
+                 $(articleObjects[i]).click(function(){
+                   $(articleObjects[i]).toggle();
+});
+                 
+                     articleObjects[i].addEventListener("click",addOrDeleteStar);
+         	     
+	} 
+	
+	
+})();
+
+
+
+
+function addOrDeleteStar(){
+	
+	var elem = document.createElement("img");
+	elem.setAttribute("src", "images/white_star.png");
+	document.getElementById("boxes").appendChild(elem);
+}

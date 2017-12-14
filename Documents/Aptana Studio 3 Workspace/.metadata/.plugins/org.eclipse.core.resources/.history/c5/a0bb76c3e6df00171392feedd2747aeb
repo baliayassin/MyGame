@@ -1,0 +1,30 @@
+
+
+(function articles(){
+	
+	var mainPTR = document.getElementById('boxes');
+	
+			for(i=0;i<13;i++){
+			     var  artObj=document.createElement('article');
+			     artObj.className="square";
+			     artObj.style.background='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+                 artObj.style.width = "333px";
+                 artObj.style.height = "348px";
+                 artObj.style.float = "left";
+                
+                 document.getElementById('boxes').appendChild(artObj); 
+                     artObj.addEventListener("click");
+         	     
+	} 
+	
+	
+})();
+
+
+
+
+function addStar(){
+	var elem = document.createElement("img");
+	elem.setAttribute("src", "images/white_star.png");
+	document.getElementById("boxes").appendChild(elem);
+}

@@ -1,0 +1,24 @@
+function sec(iCUrrentSec){
+	this.iID=iCUrrentSec;
+	var secObj=document.createElement('section');
+	secObj.className="div";
+	secObj.style.width=100+"px";
+	secObj.style.height=150+"px";
+	
+	var color='#' + Math.random().toString(16).substring(4);
+
+	secObj.style.backgroundColor=color;
+	
+	var appendDiv=function(){
+		
+		secObj.addEventListener('click',star);
+		document.getElementsByTagName('body')[4].appendChild(secObj);
+	} 
+	
+	for(i=0;i<13;i++){
+		 var newDiv = document.createElement('div');
+         //newDiv.id = 'div'+i;
+         newDiv.className = div;
+         toAdd.appendChild(newDiv);
+	}
+}

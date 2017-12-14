@@ -1,0 +1,37 @@
+$("document").ready(function () {
+    addArtecles();
+    
+    $("main").on("click", ".box:not(.plus)", showStar); 
+    $(".box.plus").click(addArticle);            
+})
+
+
+function createArticle() {
+    var newArticle = $("<article/>");
+    newArticle.addClass("box");    
+    var color='#' + (0x1000000 + (Math.random()) * 0xffffff).toString(16).substr(1, 6);
+    newArticle.css("background-color", color);
+    return newArticle;
+}
+
+
+
+function addArtecles() {
+   
+    for (var i = 0; i < (25/2); i++) 
+        $("main").append(createArticle());        
+        
+    
+  
+    $("main article:last").addClass("plus"); 
+}
+
+
+function addArticle() {
+    $("main").prepend(createArticle());
+}
+
+function showStar() {
+  
+    $(this).toggleClass("star");    
+}
